@@ -1,4 +1,6 @@
-const {calculator, stringLength, reverseString, capitalize} = require('./project');
+const {
+  calculator, stringLength, reverseString, capitalize,
+} = require('./project.js');
 
 describe('Calculator', () => {
   describe('add', () => {
@@ -58,7 +60,6 @@ describe('Calculator', () => {
   });
 });
 
-
 describe('stringLength', () => {
   test('stringLength throws an error when the string is too short', () => {
     expect(() => stringLength('')).toThrow('String must be at least 1 character long');
@@ -85,5 +86,5 @@ describe('capitalize', () => {
     expect(capitalize('hello')).toBe('Hello');
     expect(capitalize('world')).toBe('World');
     expect(capitalize('foo bar')).toBe('Foo bar');
-  });  
+  });
 });

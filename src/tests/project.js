@@ -1,25 +1,25 @@
 class Calculator {
-  add(a, b) {
+  static add(a, b) {
     return a + b;
   }
-  
-  subtract(a, b) {
+
+  static subtract(a, b) {
     return a - b;
   }
-  
-  divide(a, b) {
+
+  static divide(a, b) {
     if (b === 0) {
       throw new Error('Cannot divide by zero');
     }
     return a / b;
   }
-  
-  multiply(a, b) {
+
+  static multiply(a, b) {
     return a * b;
   }
 }
 
-let calculator = new Calculator();
+const calculator = new Calculator();
 
 function stringLength(string) {
   if (string.length === 0) {
@@ -39,5 +39,6 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-
-module.exports = {calculator, stringLength, reverseString, capitalize};
+module.exports = {
+  calculator, stringLength, reverseString, capitalize,
+};
