@@ -41,6 +41,25 @@ h3 {
   letter-spacing: 2px;
 }
 
+.btn {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 7px 20px;
+  font-size: 10px;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
 .score-container {
   display: flex;
   gap: 40px;
@@ -71,7 +90,6 @@ h3 {
         list-style-type: none;
         width: 100%;
         display: flex;
-
       }
     }
   }
@@ -108,23 +126,4 @@ img {
   line-height: 40px;
   margin: 50px auto;
   max-width: 600px;
-}
-
-.btn {
-  background-color: $primary-color;
-  color: $secondary-color;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 7px 20px;
-  font-size: 10px;
-  cursor: pointer;
-
-  &:active {
-    transform: scale(0.98);
-  }
-
-  &:focus {
-    outline: 0;
-  }
 }
