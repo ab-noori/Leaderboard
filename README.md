@@ -25,7 +25,7 @@
 
 -->
 
-> # Template Repository
+> # Leaderboard
 ### Desktop view shoots for this project:
 
 | Desktop Veiw Representation|
@@ -58,11 +58,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Leaderboard] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+> **[Leaderboard]** is website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,7 +68,8 @@
 - <summary>Client</summary>
     <ul>
       <li><a href="https://reactjs.org/">HTML</a></li>
-      <li><a href="https://reactjs.org/">Bootstrap</a></li>
+      <li><a href="https://reactjs.org/">SCSS</a></li>
+      <li><a href="https://reactjs.org/">Webpack</a></li>
       <li><a href="https://reactjs.org/">JavaScript</a></li>
     </ul>
 
@@ -87,9 +86,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://ab-noori.github.io/Webpack-Boilerplate/dist/)
+> - [Live Demo Link](https://ab-noori.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +110,7 @@ Clone this repository to your desired folder:
 - Use the following Commands:
 
       cd your-desired-folder
-      git clone git@github.com:ab-noori/Project-Template.git
+      git clone git@github.com:ab-noori/Leaderboard.git
 
 
 ### Install
@@ -124,11 +121,18 @@ Install this project with:
 
 
 ### Usage
+- Use following commands to run on your local system:
 
-- To add data the local storage of browser
-- To read data from local storage of browser.
-- To display data.
-- To remove data from local storage.
+      npm run build
+      npm run dev
+
+### Run tests
+- Run the following script and style test:
+
+      npx eslint .
+      npx stylelint "**/*.{css,scss}"
+ 
+
 
 ### Deployment
 
@@ -147,12 +151,6 @@ You can deploy this project using:
 - GitHub: [@ab-noori](https://github.com/ab-noori)
 - Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
 - LinkedIn: [abdul-ali-noori](https://www.linkedin.com/in/abdul-ali-noori-384b85195/)
-
-👤 **Samson Tush**
-
-- GitHub: [@Samson](https://github.com/SamTush)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>

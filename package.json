@@ -1,5 +1,5 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "leaderboard",
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ab-noori/Webpack-Boilerplate.git"
+    "url": "git+https://github.com/ab-noori/Leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ab-noori/Webpack-Boilerplate/issues"
+    "url": "https://github.com/ab-noori/Leaderboard/issues"
   },
-  "homepage": "https://github.com/ab-noori/Webpack-Boilerplate#readme",
+  "homepage": "https://github.com/ab-noori/Leaderboard#readme",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
@@ -29,7 +29,7 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
-    "hint": "^7.1.3",
+    "hint": "^7.1.5",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.58.3",
     "sass-loader": "^13.2.0",

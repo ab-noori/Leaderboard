@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-$primary-color: #0f0542;
+$primary-color: #14539a;
 $secondary-color: #f4f4f4;
 $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 
@@ -25,16 +25,94 @@ body {
   background-color: $secondary-color;
   border-radius: 10px;
   box-shadow: $box-shadow;
-  padding: 50px 20px;
+  padding: 50px 30px;
   text-align: center;
   max-width: 100%;
-  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+h1,
 h3 {
+  align-self: flex-start;
   margin: 0;
-  opacity: 0.5;
+  opacity: 0.8;
   letter-spacing: 2px;
+}
+
+.btn {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 7px 20px;
+  font-size: 10px;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.score-container {
+  display: flex;
+  gap: 40px;
+
+  & .recent-score {
+    min-width: 200px;
+
+    & .recent-score-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    & .score-list {
+      border: 2px solid greenyellow;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      gap: 5px;
+
+      & :nth-child(even) {
+        background-color: #9eb7e7;
+      }
+
+      & li {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+      }
+    }
+  }
+
+  & .new-score {
+    display: flex;
+    flex-direction: column;
+
+    & ul {
+      padding: 0;
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+
+    & .btn {
+      align-self: flex-end;
+    }
+  }
 }
 
 img {
@@ -48,23 +126,4 @@ img {
   line-height: 40px;
   margin: 50px auto;
   max-width: 600px;
-}
-
-.btn {
-  background-color: $primary-color;
-  color: $secondary-color;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 14px 40px;
-  font-size: 16px;
-  cursor: pointer;
-
-  &:active {
-    transform: scale(0.98);
-  }
-
-  &:focus {
-    outline: 0;
-  }
 }

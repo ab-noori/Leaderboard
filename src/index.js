@@ -1,12 +1,11 @@
-import generateJoke from './generateJoke.js';
 import './styles/main.scss';
-import laughing from './assets/laughing.svg';
+import UI from './modules/ui.js';
 
-const laughImg = document.getElementById('laughImg');
+document.addEventListener('DOMContentLoaded', UI.displayScores);
 
-laughImg.src = laughing;
+document.querySelector('#add-form').addEventListener('submit', (e) => {
+  // prevent default submit
+  e.preventDefault();
 
-generateJoke();
-
-const jokeBtn = document.getElementById('jokBtn');
-jokeBtn.addEventListener('click', generateJoke);
+  UI.getNewScore();
+});
