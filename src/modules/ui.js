@@ -1,26 +1,26 @@
-// UI Class: Handle UI Tasks
 import Score from './score.js';
-import Store from './store.js';
+
+const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yAzAJFJQSZLJxVm1Hh1T/scores/';
 
 class UI {
-  static displayScores = () => {
-    const scores = Store.getScores();
-    scores.forEach((score) => UI.addScoreToList(score));
+  static displayScores = async () => {
+    const scores = await (await fetch(api)).json();
+    scores.result.forEach((score) => UI.addScoreToList(score));
   }
 
-  static getNewScore= () => {
-    const name = document.querySelector('#name').value;
+  static getNewScore = () => {
+    const user = document.querySelector('#name').value;
     const score = document.querySelector('#score').value;
     // valitdate empty form
-    if (name !== '' && score !== '') {
+    if (user !== '' && score !== '') {
       // making object of Score class
-      const newScore = new Score(name, score);
+      const newScore = new Score(user, score);
 
       // add Score to UI
       UI.addScoreToList(newScore);
 
-      // add score to store
-      Store.addScore(newScore);
+      // Add data to API
+      UI.postData(user, score);
 
       // clear fields
       UI.clearFields();
@@ -33,16 +33,31 @@ class UI {
 
     const span = document.createElement('span');
 
-    span.innerHTML = `${score.name} : ${score.score}`;
+    span.innerHTML = `${score.user} : ${score.score}`;
 
     li.appendChild(span);
     list.appendChild(li);
+  }
+
+  static postData = async (user, score) => {
+    const res = await fetch(api,
+      {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ user, score }),
+      });
+    const data = await res.json();
+    return data.result;
   }
 
   static clearFields = () => {
     document.querySelector('#name').value = '';
     document.querySelector('#score').value = '';
   }
+
+  static refreshScores = async () => {
+    window.location.reload();
+  };
 }
 
 export default UI;
