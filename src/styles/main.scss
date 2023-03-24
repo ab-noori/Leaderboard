@@ -62,68 +62,76 @@ h3 {
 
 .score-container {
   display: flex;
+  flex-direction: column;
   gap: 40px;
+}
 
-  & .recent-score {
-    min-width: 200px;
-
-    & .recent-score-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    & .score-list {
-      border: 2px solid greenyellow;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
-      gap: 5px;
-
-      & :nth-child(even) {
-        background-color: #9eb7e7;
-      }
-
-      & li {
-        list-style-type: none;
-        width: 100%;
+@media only screen and (min-width: 570px) {
+  .score-container {
+    flex-direction: row;
+  
+    & .recent-score {
+      min-width: 200px;
+  
+      & .recent-score-head {
         display: flex;
+        justify-content: space-between;
+        gap: 30px;
       }
-    }
-  }
-
-  & .new-score {
-    display: flex;
-    flex-direction: column;
-
-    & ul {
-      padding: 0;
-
-      & form {
+  
+      & .score-list {
+        border: 2px solid greenyellow;
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        padding: 10px;
+        gap: 5px;
+  
+        & :nth-child(even) {
+          background-color: #9eb7e7;
+        }
+  
+        & li {
+          list-style-type: none;
+          width: 100%;
+          display: flex;
+        }
       }
     }
-
-    & .btn {
-      align-self: flex-end;
+  
+    & .new-score {
+      display: flex;
+      flex-direction: column;
+  
+      & ul {
+        padding: 0;
+  
+        & form {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+  
+      & .btn {
+        align-self: flex-end;
+      }
     }
+  }
+  
+  img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .joke {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
   }
 }
 
-img {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-.joke {
-  font-size: 30px;
-  letter-spacing: 1px;
-  line-height: 40px;
-  margin: 50px auto;
-  max-width: 600px;
-}
