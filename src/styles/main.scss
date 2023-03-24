@@ -69,16 +69,16 @@ h3 {
 @media only screen and (min-width: 570px) {
   .score-container {
     flex-direction: row;
-  
+
     & .recent-score {
       min-width: 200px;
-  
+
       & .recent-score-head {
         display: flex;
         justify-content: space-between;
         gap: 30px;
       }
-  
+
       & .score-list {
         border: 2px solid greenyellow;
         border-radius: 5px;
@@ -87,11 +87,11 @@ h3 {
         align-items: flex-start;
         padding: 10px;
         gap: 5px;
-  
+
         & :nth-child(even) {
           background-color: #9eb7e7;
         }
-  
+
         & li {
           list-style-type: none;
           width: 100%;
@@ -99,14 +99,14 @@ h3 {
         }
       }
     }
-  
+
     & .new-score {
       display: flex;
       flex-direction: column;
-  
+
       & ul {
         padding: 0;
-  
+
         & form {
           display: flex;
           flex-direction: column;
@@ -114,18 +114,18 @@ h3 {
           gap: 10px;
         }
       }
-  
+
       & .btn {
         align-self: flex-end;
       }
     }
   }
-  
+
   img {
     width: 100px;
     margin-bottom: 20px;
   }
-  
+
   .joke {
     font-size: 30px;
     letter-spacing: 1px;
@@ -134,4 +134,3 @@ h3 {
     max-width: 600px;
   }
 }
-
