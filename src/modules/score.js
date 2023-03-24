@@ -1,8 +1,8 @@
 // Task Class: Represents a Task
 
 class Score {
-  constructor(name, score) {
-    this.name = name;
+  constructor(user, score) {
+    this.user = user;
     this.score = score;
     this.index = 0;
   }

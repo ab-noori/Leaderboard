@@ -7,5 +7,10 @@ document.querySelector('#add-form').addEventListener('submit', (e) => {
   // prevent default submit
   e.preventDefault();
 
-  UI.getNewScore();
+  const name = document.querySelector('#name').value;
+  const score = document.querySelector('#score').value;
+
+  UI.getNewScore(name, score);
 });
+
+document.querySelector('#refresh').addEventListener('click', UI.refreshScores);
