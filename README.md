@@ -3,11 +3,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="./src/assets/project-image.png" alt="logo" width="500"  height="auto" />
-  <br/>
 
-  <h3><b></b></h3>
 
 </div>
 
@@ -30,7 +26,8 @@
 
 | Desktop Veiw Representation|
 |---------------------------------------|
-|![screenshot](./src/assets/project-image.png)|
+|<div align="center">![screenshot](./src/assets/desktop-shot.PNG)</div>|
+|<div align="center">![screenshot](./src/assets/mobile-shot.PNG)</div>|
 
 <!-- TABLE OF CONTENTS -->
 
