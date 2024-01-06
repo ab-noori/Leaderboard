@@ -1,6 +1,6 @@
 import Score from './score.js';
 
-const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yAzAJFJQSZLJxVm1Hh1T/scores/';
+const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/2t5lac4aQ3947IHaKu73/scores/';
 
 class UI {
   static displayScores = async () => {
